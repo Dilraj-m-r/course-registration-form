@@ -1,0 +1,179 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Course Registration Form</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background: linear-gradient(to right, #00c6ff, #ff008c);
+            padding: 30px;
+            color: #000000;
+        }
+
+        form {
+            background: #dbd1f3;
+            padding: 20px;
+            border-radius: 10px;
+            width: 600px;
+            margin: auto;
+            box-shadow: 0 0 15px rgb(0, 0, 0);
+        }
+
+        fieldset {
+            margin-bottom: 20px;
+            border: 3px solid #04004d;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        legend {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #004d4d;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        input[type="number"],
+        select,
+        textarea {
+            width: 90%;
+            padding: 8px;
+            margin-top: 4px;
+            border: 2px solid #999999;
+            border-radius: 6px;
+            transition: 0.3s ease-in-out;
+        }
+
+        input[type="file"] {
+            margin-top: 4px;
+        }
+
+        input[type="radio"] {
+            margin: 0 8px;
+        }
+
+        input:hover,
+        select:hover,
+        textarea:hover {
+            background: linear-gradient(90deg,rgba(0, 36, 36, 1) 0%, rgba(9, 114, 121, 1) 0%, rgba(255, 0, 225, 1) 100%);
+            border-color: #333;
+        }
+
+        .button-group {
+            margin-top: 15px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            background-color: #0072ff;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #005bb5;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #004d4d;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Course Registration Form</h2>
+
+    <form>
+        <fieldset>
+            <legend>Personal details</legend>
+
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" placeholder="Enter First Name" required title="Enter your first name">
+
+            <label for="lname">Surname:</label>
+            <input type="text" id="lname" placeholder="Enter Surname" title="Enter your surname">
+
+            <label for="mobile">Mobile number:</label>
+            <input type="text" id="mobile" placeholder="e.g. +91-9876543210" title="Enter your 10-digit mobile number">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter Email" title="Enter your email address">
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="min 8 characters" title="Minimum 8 characters required">
+
+            <label for="confirmpass">Confirm Password:</label>
+            <input type="password" id="confirmpass" placeholder="min 8 characters" title="Re-enter your password">
+
+            <label for="dob">DOB:</label>
+            <input type="date" id="dob" title="Select your date of birth">
+
+            <label for="age">AGE:</label>
+            <input type="number" id="age" min="0" title="Enter your age">
+
+            <label>Gender:</label>
+            <input type="radio" name="gender" value="male" title="Select Male">Male
+            <input type="radio" name="gender" value="female" title="Select Female">Female
+            <input type="radio" name="gender" value="others" title="Select Others">Others
+
+            <label for="country">Select Country:</label>
+            <select id="country" title="Choose your country">
+                <option>INDIA</option>
+                <option>USA</option>
+                <option>UK</option>
+                <option>Others</option>
+            </select>
+
+            <label for="pic">Upload Picture:</label>
+            <input type="file" id="pic" title="Upload your profile picture">
+
+            <div class="button-group">
+                <input type="reset" value="Reset" title="Clear all fields">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Course Details</legend>
+
+            <label for="course">Select Course:</label>
+            <select id="course" title="Select the course you want to register for">
+                <option>Python Full Stack</option>
+                <option>Java Full Stack</option>
+                <option>MERN Stack</option>
+            </select>
+
+            <label>Delivery Mode:</label>
+            <input type="radio" name="mode" value="online" title="Choose Online Mode">ONLINE
+            <input type="radio" name="mode" value="offline" title="Choose Offline Mode">OFFLINE
+
+            <label for="inst">INSTITUTE NAME:</label>
+            <input type="text" id="inst" value="TAP ACADEMY" readonly title="Institute name (readonly)">
+
+            <label for="comments">Comments:</label>
+            <textarea id="comments" rows="4" placeholder="Enter any comments..." title="Provide additional comments or queries"></textarea>
+
+            <div class="button-group">
+                <input type="submit" value="Submit" title="Submit your registration form">
+            </div>
+        </fieldset>
+    </form>
+
+</body>
+</html>

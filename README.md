@@ -1,0 +1,1 @@
+This Course Registration Form is a user-friendly and visually engaging web form designed for students or individuals who wish to register for technical training programs such as Python Full Stack, Java Full Stack, or MERN Stack. The form features a vibrant gradient color combination that enhances its aesthetic appeal and user experience
